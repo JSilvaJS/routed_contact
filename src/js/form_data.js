@@ -15,8 +15,8 @@ export default class FormData extends Component {
 		}
 	}
 
-	dataHandler(formData) {
-		UserData.push(formData.data);
+	dataHandler(newUser) {
+		UserData.push(newUser);
 		hashHistory.push('/');
 	}
 
@@ -34,32 +34,32 @@ export default class FormData extends Component {
 					<div className="form_input_div">
 						<Dropzone onDrop={::this.dropHandler}>
 							<span className="drop-span">Drop Something Here</span>
-							<input type="hidden" value={this.state.preview} name="data"/>
+							<input type="hidden" value={this.state.preview} name="newUser"/>
 							<img className="dropzone-img" src={this.state.preview}/>
 						</Dropzone>
 						</div>
 						<div className="form_input_div">
 						<label>
 							Fullname:
-						<input type="text" name="data"/>
+						<input type="text" name="newUser"/>
 						</label> 
 						</div>
 						<div className="form_input_div">
 						<label>
 							Email:
-						<input type="email" name="data"/>
+						<input type="email" name="newUser"/>
 						</label> 
 						</div>
 						<div className="form_input_div">
 						<label>
 							Phone:
-						<input type="tel" name="data"/>
+						<input type="tel" name="newUser"/>
 						</label> 
 						</div>
 						<div className="form_input_div">
 						<label>
 							Location:
-						<input type="text" name="data"/>
+						<input type="text" name="newUser"/>
 						</label> 
 					</div>
 					<button className="add_peeps_btn"><Icon type="save"/></button>
