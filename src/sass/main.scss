@@ -1,0 +1,206 @@
+@import 'font-awesome/scss/font-awesome';
+
+body {
+  background: url(http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-22.jpg);
+}
+
+.app {
+  width: 356px;
+  height: 100%;
+  background-color: #a1c2e1;
+  display: inline-block;
+}
+
+.user-list {
+  position: absolute;
+  display: inline-block;
+}
+
+.header_div {
+  height: 73px;
+  width: 356px;  
+  display: inline-block;
+  background-color: #0f4c85;
+  border: 1px solid white;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.peeps_header {
+  color: white;
+  align-content: center;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  font-family: 'Lobster', cursive;
+  font-size: 38px;
+}
+
+.header_btn {
+  position: relative;
+  border: none;
+  color: white;
+    &:hover {
+      transition: .3s;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  background-color: Transparent;
+  outline: none;
+  position: relative;
+  top: 8px;
+  left: 7px;
+  font-size: 18px;
+}
+
+.peeps_img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+li.peeps_li {
+  width: 356px;
+  height: 55px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  list-style: none;
+  border: 1px solid #ccc;
+  background-color: #a1c2e1;
+    &:hover{
+      transition: 10s;
+      background-color: white;
+    }
+}
+
+li span {
+  position: relative;
+  top: -20px;
+  left: 20px;
+}
+
+span {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  color: #e9f5ff;
+  text-shadow: -1px 0 #5b8ab5, 0 1px #5b8ab5, 1px 0 #5b8ab5, 0 -1px #5b8ab5;
+    &:hover {
+      text-shadow: -1px 0 #3b3b3b, 0 2px #3b3b3b, 2px 0 #3b3b3b, 0 -1px #3b3b3b;
+    }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.form_header_div {
+  height: 73px;
+  width: 356px;  
+  display: inline-block;
+  background-color: #0f4c85;
+  border: 1px solid white;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+input {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  border-radius: 5px;
+}
+
+.form_header {
+  color: white;
+  align-content: center;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  left: 110px;
+  font-family: 'Lobster', cursive;
+  font-size: 38px;
+}
+
+.form_input_div {
+  display: inline-block;
+  position: relative;
+  left: 60px;
+  top: 10px;
+}
+
+form {
+  height: 385px;
+}
+
+.add_peeps_btn {
+  position: relative;
+  top: 20px;
+  left: 115px;
+  border: none;
+  color: white;
+    &:hover {
+      transition: .3s;
+      text-shadow: -1px 0 #0f4c85, 0 1px #0f4c85, 1px 0 #0f4c85, 0 -1px #0f4c85;
+    }
+  background-color: Transparent;
+  outline: none;
+  font-size: 18px;
+}
+
+.user-details {
+  width: 356px;
+  height: 530px;
+}
+
+.ud_img {
+  width: 356px;
+  height: 356px;
+   object-fit: cover;
+}
+
+.ud_li span {
+  position: relative !important;
+  top: 2px !important;
+  left: 12px !important;
+}
+
+.ud_li {
+  padding-left: 10px;
+}
+
+.ud_back {
+  border: none;
+  background-color: Transparent;
+  outline: none;
+  font-size: 20px;
+  color: black;
+    &:hover{
+      transition: .3s;
+      text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    }
+}
+
+.drop-span {
+  position: relative;
+  left: 15px;
+  top: 90px;
+  z-index: 1;
+}
+
+.dropzone-img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -31px;
+  left: 0px;
+  z-index: 0;
+  border-radius: 5px;
+  object-fit: cover;
+
+}
+
+.ul-link-text{
+  text-decoration: none;
+}
