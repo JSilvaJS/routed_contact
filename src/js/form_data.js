@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import SSF from 'react-simple-serial-form';
 import Icon from './icon';
@@ -28,38 +27,38 @@ export default class FormData extends Component {
 		return (
 			<div className="form-view">
 				<div className="form_header_div">
-				<h1 className="form_header">Add Peep</h1>
+				<h1 className="form_header"></h1>
 				</div>
-				<SSF onData={::this.dataHandler}>
+				<SSF onData={this.dataHandler}>
 					<div className="form_input_div">
-						<Dropzone onDrop={::this.dropHandler}>
+						<Dropzone className="drop-area" onDrop={::this.dropHandler}>
 							<span className="drop-span">Drop Something Here</span>
-							<input type="hidden" value={this.state.preview} name="newUser"/>
+							<input type="hidden" value={this.state.preview} name="photo"/>
 							<img className="dropzone-img" src={this.state.preview}/>
 						</Dropzone>
 						</div>
-						<div className="form_input_div">
+						<div className="form_input_div-fields">
 						<label>
 							Fullname:
-						<input type="text" name="newUser"/>
+						<input type="text" name="name"/>
 						</label> 
 						</div>
-						<div className="form_input_div">
+						<div className="form_input_div-fields">
 						<label>
 							Email:
-						<input type="email" name="newUser"/>
+						<input type="email" name="email"/>
 						</label> 
 						</div>
-						<div className="form_input_div">
+						<div className="form_input_div-fields">
 						<label>
 							Phone:
-						<input type="tel" name="newUser"/>
+						<input type="tel" name="phone"/>
 						</label> 
 						</div>
-						<div className="form_input_div">
+						<div className="form_input_div-fields">
 						<label>
 							Location:
-						<input type="text" name="newUser"/>
+						<input type="text" name="location"/>
 						</label> 
 					</div>
 					<button className="add_peeps_btn"><Icon type="save"/></button>

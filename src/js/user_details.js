@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import UserData from './user_data';
 import Icon from './icon';
 
 export default class UserDetails extends Component {
 
 	render () {
-		var user = UserData[0];
+		let { user_name } = this.props.params;
+		let user = UserData.find(currentUser => currentUser.name === user_name);
+
 		return (
 			<div className="user-details">
 				<div className="avatar">
