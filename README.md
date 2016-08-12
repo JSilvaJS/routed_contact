@@ -1,5 +1,5 @@
 # Synopsis
-Built a simple contact list with React Router. 
+Built a simple contact list with React.js 
 
 # Code Example
 ```javascript
